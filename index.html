@@ -1,0 +1,393 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gowthami Pediredla - Frontend Developer Resume</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        line-height: 1.3;
+        margin: 5px 10px;
+        color: #333;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: 800px;
+      }
+
+      .header {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #333;
+      }
+
+      .name {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 3px;
+        color: #000;
+      }
+
+      .contact-info {
+        font-size: 9px;
+        line-height: 1.3;
+      }
+
+      .section {
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        background-color: #34495e;
+        color: white;
+        padding: 4px 10px;
+        font-weight: bold;
+        font-size: 11px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 11px;
+        margin-bottom: 3px;
+        color: #2c3e50;
+      }
+
+      .job-details {
+        font-size: 9px;
+        color: #666;
+        margin-bottom: 4px;
+        font-style: italic;
+      }
+
+      .job-content {
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
+
+      .job-content ul {
+        margin: 3px 0;
+        padding-left: 15px;
+      }
+
+      .job-content li {
+        margin-bottom: 3px;
+        font-size: 9px;
+        line-height: 1.4;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        font-size: 9px;
+      }
+
+      .skill-category {
+        margin-bottom: 8px;
+      }
+
+      .skill-category-title {
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 3px;
+      }
+
+      .professional-summary {
+        font-size: 10px;
+        line-height: 1.4;
+        text-align: justify;
+      }
+
+      .certification,
+      .education {
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+
+      .certification-title,
+      .education-title {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      @media print {
+        button {
+          display: none !important;
+        }
+
+        body {
+          margin: 10px;
+        }
+
+        @page {
+          margin: 0.5in;
+          size: A4;
+        }
+
+        * {
+          -webkit-print-color-adjust: exact !important;
+          color-adjust: exact !important;
+        }
+      }
+    </style>
+    <script>
+      function downloadPDF() {
+        const button = document.querySelector("button");
+        button.style.display = "none";
+        window.print();
+        setTimeout(() => {
+          button.style.display = "block";
+        }, 1000);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- <button onclick="downloadPDF()"
+        style="position: fixed; top: 10px; right: 10px; background-color: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 12px; z-index: 1000;">📄
+        Download PDF</button> -->
+    <div class="container">
+      <div class="header">
+        <div class="name">GOWTHAMI PEDIREDLA</div>
+        <div class="contact-info">
+          <strong>Email:</strong> gowthami.pediredla@yahoo.com &nbsp;
+          <strong>Mobile:</strong> 8978274717<br />
+
+          <strong>GitHub:</strong>
+          <a href="https://github.com/gowthamipediredla" target="_blank"
+            >github.com/gowthamipediredla</a
+          >&nbsp;&nbsp;&nbsp;
+
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/in/gowthami-pediredla"
+            target="_blank"
+            >linkedin.com/in/gowthami-pediredla</a
+          >
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="professional-summary">
+          <strong>Senior Frontend Developer</strong> with
+          <strong>7+ years of experience</strong> in designing and building
+          scalable, user-centric web and mobile applications using
+          <strong>React.js</strong>, <strong>React Native</strong>,
+          <strong>Redux</strong>, <strong>JavaScript</strong>, and
+          <strong>TypeScript</strong>. Skilled in
+          <strong>optimizing application performance</strong>, applying
+          <strong>accessibility best practices</strong>, and ensuring seamless
+          cross-platform usability. Proven track record of delivering
+          <strong>50% performance improvements</strong> and achieving a
+          <strong>90% First-Time Pass Rate (FTPR)</strong> for releases.
+          Certified AWS Cloud Practitioner with a working understanding of cloud
+          fundamentals, and a steady focus on writing clean, maintainable code
+          while staying current with modern frontend practices.
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div style="font-size: 9px; line-height: 1.4">
+          <strong>Frontend Technologies:</strong> ReactJS, React Hooks, Redux,
+          React Native, JavaScript (ES6+), TypeScript, HTML5, CSS3<br />
+          <strong>Testing & Libraries:</strong> Jest, React Testing Library,
+          Enzyme, REST APIs, Performance optimization tools, Webpack<br />
+          <strong>Developer Tools:</strong> Git, GitHub, Agile/Scrum, Code
+          Reviews, CI/CD, Accessibility Standards (WCAG)
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">Work Experience</div>
+
+        <div class="job-title">
+          Tech Lead – Senior Experience Engineer – Publicis Sapient
+        </div>
+        <div class="job-details">
+          📅 Nov 2022 – Present &nbsp;&nbsp;&nbsp; 📍 Pune, India
+        </div>
+        <div class="job-content">
+          <ul>
+            <li>
+              Led the enhancement of <strong>MyAccount</strong> features across
+              web using <strong>React</strong>, <strong>Redux</strong>, and
+              <strong>TypeScript</strong>, delivering a seamless and scalable
+              user experience.
+            </li>
+            <li>
+              Architected and implemented performance improvements like
+              <strong>lazy loading</strong>, <strong>code splitting</strong>,
+              and optimized rendering, boosting performance by
+              <strong>15%</strong>.
+            </li>
+            <li>
+              Created and maintained reusable, scalable
+              <strong>component libraries</strong>, and integrated with complex
+              <strong>REST APIs</strong>, reducing code duplication by
+              <strong>20%</strong>.
+            </li>
+            <li>
+              Migrated critical features to <strong>TypeScript</strong>,
+              improving type safety and catching potential runtime issues during
+              development.
+            </li>
+            <li>
+              Mentored junior developers, conducted regular
+              <strong>code reviews</strong>, and promoted best practices,
+              building a culture of high-quality code and team ownership.
+            </li>
+            <li>
+              Strengthened CI/CD pipelines by enforcing PR checks, achieving
+              <strong>95% code standard adherence</strong> and reducing
+              production bugs by <strong>25%</strong>.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-title">Associate II – Publicis Sapient</div>
+        <div class="job-details">
+          📅 Apr 2021 – Nov 2022 &nbsp;&nbsp;&nbsp; 📍 Remote
+        </div>
+        <div class="job-content">
+          <ul>
+            <li>
+              Spearheaded frontend development of the
+              <strong>Suncorp Insurance Portal</strong> using
+              <strong>React</strong> and <strong>Redux</strong>, increasing user
+              satisfaction and engagement by <strong>30%</strong>.
+            </li>
+            <li>
+              Identified and resolved major performance bottlenecks, reducing
+              page load times by <strong>50%</strong> and improving Lighthouse
+              scores.
+            </li>
+            <li>
+              Developed reusable UI components and optimized rendering logic,
+              improving scalability and maintainability of the codebase.
+            </li>
+            <li>
+              Worked closely with QA and product teams to triage bugs and
+              rapidly deploy hotfixes for production issues.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-title">Frontend Developer – IBM</div>
+        <div class="job-details">
+          📅 Sep 2020 – Apr 2021 &nbsp;&nbsp;&nbsp; 📍 Bengaluru
+        </div>
+        <div class="job-content">
+          <ul>
+            <li>
+              Contributed to <strong>Abu Dhabi’s TAMM</strong> platform using
+              <strong>React</strong> and <strong>Redux</strong>, improving
+              access to over 100+ government services.
+            </li>
+            <li>
+              Focused on <strong>accessibility</strong> (WCAG) and UX, helping
+              reduce user complaints by <strong>40%</strong>.
+            </li>
+            <li>
+              Delivered responsive, cross-browser compatible UI components and
+              collaborated with backend teams for smooth API integration.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job-title">System Engineer – TCS</div>
+        <div class="job-details">
+          📅 Dec 2017 – Mar 2020 &nbsp;&nbsp;&nbsp; 📍 Pune, India
+        </div>
+        <div class="job-content">
+          <ul>
+            <li>
+              Built and maintained enterprise-grade frontend apps for
+              <strong>Santos</strong>, an Australian energy company, using
+              <strong>React</strong> and <strong>Redux</strong>.
+            </li>
+            <li>
+              Integrated <strong>RESTful APIs</strong> for real-time updates and
+              analytics dashboards.
+            </li>
+            <li>
+              Optimized features for performance, reducing initial load time by
+              up to <strong>30%</strong> and improving UI responsiveness.
+            </li>
+            <li>
+              Participated in Agile ceremonies, sprint planning, and estimations
+              to align frontend development with business goals.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="job-content">
+          <ul>
+            <li>
+              <strong>Academy.com – US-based eCommerce Platform:</strong>
+              Developed scalable components and improved user journeys for a
+              large U.S. retail platform. <br /><strong>Tech Stack:</strong>
+              ReactJS, Redux, Styled components, Typescript, WCAG
+            </li>
+            <li>
+              <strong>Suncorp – Insurance Portal:</strong> Built reusable
+              components and optimized application performance for smoother
+              customer experience. <br /><strong>Tech Stack:</strong> ReactJS,
+              Redux, JavaScript, HTML, CSS
+            </li>
+
+            <li>
+              <strong>Abu Dhabi TAMM – Government Services Platform:</strong>
+              Enhanced accessibility and usability for public services.
+              <br /><strong>Tech Stack:</strong> ReactJS, Redux, Webpack, HTML,
+              CSS, Accessibility (WCAG)
+            </li>
+            <li>
+              <strong>eJewellery – E-commerce Website:</strong> Built a
+              feature-rich shopping experience with product search, filtering.
+              <br /><strong>Tech Stack:</strong>
+              ReactJS, TypeScript, Redux, Material UI
+            </li>
+
+            <li>
+              <strong>eLearning Platform:</strong> Designed and implemented a
+              user-centric interface for interactive courses and assessments.
+              <br /><strong>Tech Stack:</strong> ReactJS, Redux, TypeScript,
+              SCSS
+            </li>
+            <li>
+              <strong>Data Lineage Portal:</strong> Built a visual tool for
+              tracking data flow and transformations across systems.
+              <br /><strong>Tech Stack:</strong> ReactJS, Redux, HTML, CSS
+            </li>
+            <li>
+              <strong>Santos – Oil & Gas Company Portal:</strong> Developed a
+              secure and responsive web interface for internal resource tracking
+              and analytics. <br /><strong>Tech Stack:</strong> ReactJS, Redux,
+              JavaScript, HTML, CSS, REST APIs
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="education">
+          <span class="education-title"
+            >B.Tech in Computer Science Engineering</span
+          >
+          | Gayatri Vidya Parishad college of Engg | 2017 | 81%
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
